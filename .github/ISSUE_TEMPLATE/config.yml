@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General question
+    url: https://letsgit.app
+    about: Visit the website for documentation and general information.
+  - name: Email support
+    url: mailto:support@letsgit.app
+    about: Reach out directly for account, licensing, or private questions.
