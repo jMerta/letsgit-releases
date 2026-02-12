@@ -1,0 +1,88 @@
+name: Bug Report
+description: Something isn't working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. The more detail you provide, the faster I can track it down.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: "When I click X, Y happens instead of Z."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can I reproduce this?
+      placeholder: |
+        1. Open a repo with ...
+        2. Click on ...
+        3. See error ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Windows
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      description: "e.g. macOS 15.2, Windows 11 23H2, Ubuntu 24.04"
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: LetsGit version
+      description: "Found in the title bar or About dialog, e.g. 0.2.7"
+    validations:
+      required: true
+
+  - type: input
+    id: git-version
+    attributes:
+      label: Git version
+      description: "Run `git --version` in your terminal"
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, drag and drop screenshots here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else that might help -- repo size, error messages, logs, etc.
+    validations:
+      required: false
